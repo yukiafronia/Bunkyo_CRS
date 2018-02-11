@@ -11,7 +11,12 @@
 
     <TableLayout
             android:layout_width="368dp"
-            android:layout_height="495dp">
+            android:layout_height="495dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp">
 
         <TableRow
                 android:layout_width="match_parent"
@@ -68,14 +73,17 @@
 
         <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:baselineAligned="false">
 
             <TextView
                     android:background="@drawable/partsdesign"
                     android:text="1限"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView8"/>
+                    android:layout_height="70dp"
+                    android:id="@+id/textView8"
+                    android:layout_width="30dp"
+                    android:textAlignment="center"/>
 
             <Button
                     android:background="@drawable/partsdesign"
@@ -111,14 +119,16 @@
 
         <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="70dp"
+                android:baselineAligned="false">
 
             <TextView
                     android:background="@drawable/partsdesign"
                     android:text="2限"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView9"/>
+                    android:layout_width="30dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/textView9"
+                    android:textAlignment="center"/>
 
             <Button
                     android:background="@drawable/partsdesign"
@@ -154,14 +164,16 @@
 
         <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="70dp"
+                android:baselineAligned="false">
 
             <TextView
                     android:background="@drawable/partsdesign"
                     android:text="3限"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView10"/>
+                    android:layout_width="30dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/textView10"
+                    android:textAlignment="center"/>
 
             <Button
                     android:background="@drawable/partsdesign"
@@ -197,13 +209,14 @@
 
         <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="70dp"
+                android:baselineAligned="false">
 
             <TextView
                     android:background="@drawable/partsdesign"
                     android:text="4限"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="30dp"
+                    android:layout_height="70dp"
                     android:id="@+id/textView11"/>
 
             <Button
@@ -240,14 +253,16 @@
 
         <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="70dp"
+                android:baselineAligned="false">
 
             <TextView
                     android:background="@drawable/partsdesign"
                     android:text="5限"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView12"/>
+                    android:layout_width="30dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/textView12"
+                    android:textAlignment="center"/>
 
             <Button
                     android:background="@drawable/partsdesign"
@@ -280,4 +295,42 @@
                     android:id="@+id/button67"/>
         </TableRow>
     </TableLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="412dp"
+            android:layout_height="67dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="-3dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="535dp"
+            tools:layout_editor_absoluteX="3dp"
+            android:baselineAligned="false">
+
+        <ImageButton
+                android:background="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/calender"
+                android:id="@+id/imageButton13"
+                android:layout_weight="0.84"/>
+
+        <ImageButton
+                android:background="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/information"
+                android:id="@+id/imageButton12"
+                android:layout_weight="0.43"/>
+
+        <ImageButton
+                android:background="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bus"
+                android:id="@+id/imageButton11"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
